@@ -2,9 +2,15 @@
 <html>
 	<head>
 		<script type="text/javascript" >
+			var body = document.body,
+    			var html = document.documentElement;
+
+			var height = Math.max( body.scrollHeight, body.offsetHeight, 
+                       		html.clientHeight, html.scrollHeight, html.offsetHeight );
+			
 			document.addEventListener('DOMContentLoaded', function() {
 			setTimeout(function() { parent.postMessage(JSON.stringify({ subject:
-			"lti.frameResize", height: 2000}), "*"); }, 0); } );
+			"lti.frameResize", height: height}), "*"); }, 0); } );
 		</script> 
 		<title>Kinsey Poland, Test</title>
 		<!-- link to main stylesheet -->
