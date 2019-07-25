@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<script type="text/javascript" >
+		<script type="text/javascript" >			
+			document.addEventListener('DOMContentLoaded', function() {
 			var body = document.body,
     			var html = document.documentElement;
 
 			var height = Math.max( body.scrollHeight, body.offsetHeight, 
                        		html.clientHeight, html.scrollHeight, html.offsetHeight );
 			
-			document.addEventListener('DOMContentLoaded', function() {
 			setTimeout(function() { parent.postMessage(JSON.stringify({ subject:
 			"lti.frameResize", height: height}), "*"); }, 0); } );
 		</script> 
