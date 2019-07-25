@@ -10,6 +10,8 @@
 			var height = Math.max( body.scrollHeight, body.offsetHeight, 
                        		html.clientHeight, html.scrollHeight, html.offsetHeight)
 			
+			alert(height)
+			
 			parent.postMessage(JSON.stringify({ subject:
 			"lti.frameResize", height: height}), "*"); }, 0); } );
 		</script> 
