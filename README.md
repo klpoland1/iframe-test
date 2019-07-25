@@ -1,2 +1,2 @@
 # iframe-test
-Set IFrame Size to Match Web Page
+Set iframe size to match webpage, for seamless external hosting on Brightspace LMS.
