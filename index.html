@@ -10,10 +10,11 @@
 				var height = Math.max( body.scrollHeight, body.offsetHeight, 
 					html.clientHeight, html.scrollHeight, html.offsetHeight );
 				return height;
-			*/
+			
 			document.addEventListener('DOMContentLoaded', function() {
 				setTimeout(function() { parent.postMessage(JSON.stringify({ subject:
 				"lti.frameResize", height: 1000 }), "*"); }, 0); } );
+			*/
 			}
 		</script>
 	</head>
