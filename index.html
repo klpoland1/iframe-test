@@ -1,8 +1,21 @@
 <html>
 	<head>
 		<title>Kinsey Poland, Test</title>
-		<script type="text/javascript" src="https://raw.github.com/davidjbradshaw/iframe-resizer/master/js/iframeResizer.contentWindow.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="main.css" />
+		<script type="text/javascript">
+			/*
+			function getDocHeight(doc) {
+    				doc = doc || document;
+				var body = doc.body, html = doc.documentElement;
+				var height = Math.max( body.scrollHeight, body.offsetHeight, 
+					html.clientHeight, html.scrollHeight, html.offsetHeight );
+				return height;
+			*/
+			document.addEventListener('DOMContentLoaded', function() {
+				setTimeout(function() { parent.postMessage(JSON.stringify({ subject:
+				"lti.frameResize", height: 500 }), "*"); }, 0); } );
+			}
+		</script>
 	</head>
 	<body>
 		<nav>
