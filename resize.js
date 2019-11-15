@@ -14,3 +14,4 @@ function resizeIframe(id) {
     	ifrm.style.height = "10px";
     	ifrm.style.height = getDocHeight(doc) + 4 + "px";
     	ifrm.style.visibility = 'visible';
+}
