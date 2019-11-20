@@ -2,10 +2,14 @@
 	<head>
 		<title>Kinsey Poland, Test</title>
 		<link rel="stylesheet" type="text/css" href="main.css" />
+		<script src="https://raw.githubusercontent.com/klpoland1/iframe-test/gh-pages/resize.js"></script>
 		<script type="text/javascript">
-		document.addEventListener('DOMContentLoaded', function() {
-		setTimeout(function() { parent.postMessage(JSON.stringify({ subject:
-		"lti.frameResize", height: document.getElementById('container').offsetHeight + 302}), "*"); }, 0); } );
+			sendHeight()
+			/*
+			document.addEventListener('DOMContentLoaded', function() {
+			setTimeout(function() { parent.postMessage(JSON.stringify({ subject:
+			"lti.frameResize", height: document.getElementById('container').offsetHeight + 302}), "*"); }, 0); } );
+			*/
 		</script>
 	</head>
 	<body>
