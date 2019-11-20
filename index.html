@@ -5,10 +5,10 @@
 		<script type="text/javascript">
 		document.addEventListener('DOMContentLoaded', function() {
 		setTimeout(function() { parent.postMessage(JSON.stringify({ subject:
-		"lti.frameResize", height: document.getElementById('container').clientHeight }), "*"); }, 0); } );
+		"lti.frameResize", height: document.getElementById('wrapper').clientHeight }), "*"); }, 0); } );
 		</script>
 	</head>
-	<body>
+	<body id="wrapper">
 		<nav>
     		<ul>
         		<li><a href="/">Home</a></li>
