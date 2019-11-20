@@ -2,10 +2,11 @@
 	<head>
 		<title>Kinsey Poland, Test</title>
 		<link rel="stylesheet" type="text/css" href="main.css" />
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 		<script type="text/javascript">
 		document.addEventListener('DOMContentLoaded', function() {
 		setTimeout(function() { parent.postMessage(JSON.stringify({ subject:
-		"lti.frameResize", height: document.getElementById('container').scrollHeight }), "*"); }, 0); } );
+		"lti.frameResize", height: $(document).height() }), "*"); }, 0); } );
 		</script>
 	</head>
 	<body>
