@@ -3,25 +3,9 @@
 		<title>Kinsey Poland, Test</title>
 		<link rel="stylesheet" type="text/css" href="main.css" />
 		<script type="text/javascript">
-			function sendHeight()
-			{
-			  if(parent.postMessage)
-			  {
-				// replace #wrapper with element that contains 
-				// actual page content
-				var height= document.getElementById('container').offsetHeight;
-				parent.postMessage(height, '*');
-			    }
-			}
-			var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
-			var eventer = window[eventMethod];
-			var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
-			
-			eventer(messageEvent, function(e) {
-			    if (isNaN(e.data)) return;
-			    sendHeight();
-			}, 
-			false);
+		document.addEventListener('DOMContentLoaded', function() {
+		setTimeout(function() { parent.postMessage(JSON.stringify({ subject:
+		"lti.frameResize", height: 500 }), "*"); }, 0); } );
 		</script>
 	</head>
 	<body>
